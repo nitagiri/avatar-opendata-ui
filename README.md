@@ -16,29 +16,26 @@ avatar-opendata-ui/
 ├── OpenDataSection.qml
 ├── file-opendata/
 │   └── opendata.py
-      └── brainwaves/
-        └── testdata/        # Dummy data used for testing
+      └── data_clean/
+        └── data_clean/        
         ├── forward/
         ├── backward/
         ├── land/
         ├── takeoff/
         ├── right/
         └── left/
-Note: tmp_raw_data/ is created automatically during processing and cleaned up afterward.
-Output Example (Dummy Data)
------ Data Generation Complete! -----
+
+Output Example
 Total size of the new dataset: 0.00 GB
 Number of replicated files per category:
-  - ('testdata', 'backward'): 50
-  - ('testdata', 'forward'): 50
-  - ('testdata', 'land'): 50
-  - ('testdata', 'left'): 50
-  - ('testdata', 'right'): 50
-  - ('testdata', 'takeoff'): 50
-Total number of files in the new dataset: 312
+  - ('testdata', 'backward'): 150
+  - ('testdata', 'forward'): 150
+  - ('testdata', 'land'): 150
+  - ('testdata', 'left'): 150
+  - ('testdata', 'right'): 150
+  - ('testdata', 'takeoff'): 150
+Total number of files in the new dataset: 2112
+--------------------------------------------------
 Open Data finished successfully.
-Real data will produce larger file counts and total size; this submission uses small CSVs for testing only.
-Notes
-•	Privacy: No real brainwave data is included in this repository.
+
 •	Dependencies: Python 3.9+ and PySide6 only. No other external libraries required.
-•	Testing: The provided testdata folder is sufficient to verify GUI functionality and Open Data process.
